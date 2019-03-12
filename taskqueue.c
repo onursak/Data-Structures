@@ -3,8 +3,8 @@
 #include "taskqueue.h"
 #include "linkedlist.h"
 
-tsk_node* front = NULL; // this pointer keeps the first element adress in the queue (global variable)
-tsk_node* back = NULL;    // this pointer keeps the last element adress in the queue (global variable)
+tsk_node* front = NULL;
+tsk_node* back = NULL;
 
 void Task_queue(int n){
 	for(int i=0; i<n; i++){ //creating n tasks
