@@ -51,7 +51,7 @@ void Task_enqueue(int task_num, int task_type, int value){
 		front->value = value;
 		front->next = NULL;
 		back = front;  //back and front points same node for now(1 element in the queue)
-		return;     //return and don't execute the rest of code
+		return;
 	}
 	//if queue is not empty
 	//creating new node located next of back
@@ -64,7 +64,7 @@ void Task_enqueue(int task_num, int task_type, int value){
 };
 
 int Task_dequeue(int* task_num_p, int* task_type_p, int* value_p){
-	if(front == NULL){  //there is no element to dequeue
+	if(front == NULL){ 
 		return 0;
 	}
 	*task_num_p = front->task_num;
